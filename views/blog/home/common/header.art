@@ -1,0 +1,28 @@
+	<!-- 头部框架开始 -->
+	<div class="header">
+		<div class="w1100">
+			<!-- 网站logo开始 -->
+			<h1 class="logo fl">
+				<a href="/blog_home/index"><img src="/blog/home/images/logo.png" alt="黑马程序员"></a>
+			</h1>
+			<!-- 网站logo结束 -->
+			<!-- 网站导航开始 -->
+			<ul class="navigation fr">
+				<li>
+					<a href="/blog_home/index">首页</a>
+				</li>
+				<li>
+					<!-- <a href="{{userInfo? 'javascript:;':'/blog_admin/login'}}">{{userInfo? userInfo.username:'登录'}}</a> -->
+					<a href="{{user2? 'javascript:;':'/blog_admin/login'}}">{{user2? userInfo.username:'登录'}}</a>
+				</li>
+				<li>
+					<a href="{{userInfo? (userInfo.role=='admin'?'/blog_admin/user' : '/blog_admin/article') : '/blog_admin/login'}}">写文章</a>
+        </li>
+        <li style="display: {{user2? 'block':'none'}};">
+					<a href="/blog_admin/loginout">退出登录</a>
+				</li>
+			</ul>
+			<!-- 网站导航结束 -->
+		</div>
+	</div>
+	<!-- 头部框架结束 -->

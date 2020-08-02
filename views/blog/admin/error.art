@@ -1,0 +1,9 @@
+{{extend './common/layout.art'}} {{block 'main'}}
+<p class="bg-danger errot">{{msg}}</p>
+{{/block}} {{block 'script'}}
+<script>
+  setTimeout(function() {
+    location.href = '/blog_admin/login'
+  }, 3000)
+</script>
+{{/block}}

@@ -1,0 +1,22 @@
+<!-- 侧边栏 -->
+<div class="aside fl">
+    <ul class="menu list-unstyled">
+        <li style="display: {{userInfo.role=='admin'? 'block': 'none'}};">
+            <a class="item {{currentLink=='user'?'active':''}}" href="/blog_admin/user">
+                <span class="glyphicon glyphicon-user"></span>
+                用户管理
+            </a>
+        </li>
+        <li>
+            <a class="item {{currentLink=='article'?'active':''}}" href="/blog_admin/article">
+                <span class="glyphicon glyphicon-th-list"></span>
+                文章管理
+            </a>
+        </li>
+    </ul>
+    <div class="cprt">
+        <!-- Powered by <a href="javascript:;" target="_blank">lvan-ymg</a> -->
+        Powered by <a href="javascript:;">lvan-ymg</a>
+    </div>
+</div>
+<!-- 侧边栏 -->
