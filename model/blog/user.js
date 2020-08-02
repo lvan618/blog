@@ -36,10 +36,10 @@ async function creatUser() {
   const pass = await bcrypt.hash('123456', salt)
   // 插入用户
   const user = await User.create({
-    username: 'lvan2',
-    email: 'lvan2@126.com',
+    username: 'lvan',
+    email: 'lvan@126.com',
     password: pass,
-    role: 'normal',
+    role: 'admin',
     state: 0
   }).then(() => console.log('插入用户成功'))
 }
